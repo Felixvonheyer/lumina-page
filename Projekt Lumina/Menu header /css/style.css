@@ -45,7 +45,7 @@
         right: 0;
         background: var(--white);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 15px 7%;
+        padding: 0px 7%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -53,6 +53,31 @@
         background-color: #A59D9A
     }
 
+  header2 {
+        position: fixed;
+        top: 30;
+        left: 0;
+        right: 0;
+        
+        background: var(--white);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 5px 7%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+        background-color: #B59B95;
+         font-size: var(--font-size-l);
+        font-weight: var(--font-weight-bold);
+
+    }
+
+    header2 a {
+        
+    }
+
+
+   
     /* Brand name */
     header .brand {
         font-size: var(--font-size-xxl);
@@ -60,6 +85,10 @@
         color: var(--primary-color);
         letter-spacing: 2px;
         text-decoration: none;
+        max-width: 80px;
+        border-radius: 80px;
+        padding: 12px;
+        
     }
 
     /* Navigation */
@@ -69,12 +98,36 @@
         align-items: center;
     }
 
-    header .navbar1 ul li {
-        position: relative;
-        margin: 0 20px;
+      header2 .navbar2 ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+
+      header .navbar1 ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    header2 .navbar2 ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
     }
 
     header .navbar1 ul li a {
+        text-decoration: none;
+        font-size: var(--font-size-base);
+        padding: 15px 50px;
+        color: var(--primary-color);
+        display: block;
+        font-weight: var(--font-weight-medium);
+        transition: color 0.3s ease;
+    }
+
+    header2 .navbar2 ul li a {
         text-decoration: none;
         font-size: var(--font-size-base);
         padding: 15px 50px;
@@ -89,24 +142,26 @@
         text-decoration: underline;
     }
 
+      header .navbar2 ul li a:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+    }
+
+
 
 
     /* Workshop button */
     .workshop-btn {
         background-color: 
-        color: var(--white);
-        border: none;
+        color:var(--white);
+        border:none;
         border-radius: 6px;
         
-        cursor: pointer;
+        cursor:pointer;
         transition: all 0.3s ease;
-        text-decoration: none;
-        display: inline-block;
+        text-decoration:none;
+        display:inline-block;
     }
-
-.workshop .search-input {
-   
-}
 
 .workshop-btn .icon-kurv {
     max-width: 30px;
@@ -116,7 +171,7 @@
 }
 
 .workshop-btn .icon-search {
-    max-width: 25px;
+    max-width: 20px;
     margin: 25px;
    
 }
@@ -194,6 +249,7 @@
     font-size: xx-large;
     margin: 15px
 
+
 }
 
 .product-corner-box #cart-button {
@@ -213,7 +269,9 @@
     margin-top: -10px;
     text-align: right;
     font-size: 10px;
-    text-align: justify;
+    text-align:right;
+    margin-left: 30px;
+
 
 }
    
